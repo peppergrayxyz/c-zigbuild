@@ -1,0 +1,3 @@
+command: zig build
+Exe and library build configured, but only single file `hello.c` found (skipping lib build)! 
+exit-status: 0

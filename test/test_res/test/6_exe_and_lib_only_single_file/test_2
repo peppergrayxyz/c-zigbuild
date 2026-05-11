@@ -1,0 +1,6 @@
+command: if [ -d zig-out ]; then (cd zig-out && find); fi
+.
+./native
+./native/Debug
+./native/Debug/a
+exit-status: 0

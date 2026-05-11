@@ -1,0 +1,36 @@
+command: if [ -d zig-out ]; then (cd zig-out && find); fi
+.
+./x86_64-windows
+./x86_64-windows/ReleaseFast
+./x86_64-windows/ReleaseFast/a.pdb
+./x86_64-windows/ReleaseFast/a.exe
+./x86_64-windows/Debug
+./x86_64-windows/Debug/a.pdb
+./x86_64-windows/Debug/a.exe
+./x86_64-windows/ReleaseSmall
+./x86_64-windows/ReleaseSmall/a.exe
+./x86_64-windows/ReleaseSafe
+./x86_64-windows/ReleaseSafe/a.pdb
+./x86_64-windows/ReleaseSafe/a.exe
+./native
+./native/Debug
+./native/Debug/a
+./x86_64-linux
+./x86_64-linux/ReleaseFast
+./x86_64-linux/ReleaseFast/a
+./x86_64-linux/Debug
+./x86_64-linux/Debug/a
+./x86_64-linux/ReleaseSmall
+./x86_64-linux/ReleaseSmall/a
+./x86_64-linux/ReleaseSafe
+./x86_64-linux/ReleaseSafe/a
+./x86_64-macos
+./x86_64-macos/ReleaseFast
+./x86_64-macos/ReleaseFast/a
+./x86_64-macos/Debug
+./x86_64-macos/Debug/a
+./x86_64-macos/ReleaseSmall
+./x86_64-macos/ReleaseSmall/a
+./x86_64-macos/ReleaseSafe
+./x86_64-macos/ReleaseSafe/a
+exit-status: 0

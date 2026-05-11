@@ -1,0 +1,2 @@
+command: darling shell nm -g zig-out/x86_64-macos/Debug/liba.dylib &> build.log 
+exit-status: 127

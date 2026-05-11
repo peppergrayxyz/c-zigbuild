@@ -1,0 +1,10 @@
+zig build -Dtargets -Doptimize=Debug
+zig build -Dtargets -Doptimize=ReleaseSafe
+zig build -Dtargets -Doptimize=ReleaseSmall
+zig build -Dtargets -Doptimize=ReleaseFast
+nm -g zig-out/x86_64-linux/Debug/liba.so &> build.log 
+cat build.log | grep int_sort | awk '{print $2, $3}'
+winedump -q -j export zig-out/x86_64-windows/Debug/a.dll &> build.log 
+cat build.log | grep int_sort | awk '{print $2, $3}'
+darling shell nm -g zig-out/x86_64-macos/Debug/liba.dylib &> build.log 
+cat build.log | grep int_sort | awk '{print $2, $3}'

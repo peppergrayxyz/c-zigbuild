@@ -1,0 +1,1 @@
+../../../examples/hello_word/src/hello.c

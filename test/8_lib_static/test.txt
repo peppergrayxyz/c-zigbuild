@@ -1,0 +1,10 @@
+zig build -Dtargets -Doptimize=Debug
+zig build -Dtargets -Doptimize=ReleaseSafe
+zig build -Dtargets -Doptimize=ReleaseSmall
+zig build -Dtargets -Doptimize=ReleaseFast
+nm -g zig-out/x86_64-linux/Debug/liba.a &> build.log 
+cat build.log | grep int_sort | awk '{print $2, $3}'
+nm -g zig-out/x86_64-windows/Debug/a.lib &> build.log 
+cat build.log | grep int_sort | awk '{print $2, $3}'
+darling shell nm -g zig-out/x86_64-macos/Debug/liba.a &> build.log 
+cat build.log | grep int_sort | awk '{print $2, $3}'

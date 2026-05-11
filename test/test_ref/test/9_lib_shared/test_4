@@ -1,0 +1,2 @@
+command: zig build -Dtargets -Doptimize=ReleaseFast
+exit-status: 0

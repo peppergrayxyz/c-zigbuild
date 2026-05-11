@@ -1,0 +1,21 @@
+command: zig build -Dtargets
+buildLibStatic: false
+buildLibShared: true
+buildBin: true
+exit-status: 0
+out-dir: .
+./x86_64-windows
+./x86_64-windows/Debug
+./x86_64-windows/Debug/intsort.exe
+./x86_64-windows/Debug/intsort.pdb
+./x86_64-windows/Debug/intsort.dll
+./x86_64-linux
+./x86_64-linux/Debug
+./x86_64-linux/Debug/intsort
+./x86_64-linux/Debug/libintsort.so
+./x86_64-macos
+./x86_64-macos/Debug
+./x86_64-macos/Debug/intsort
+./x86_64-macos/Debug/libintsort.dylib
+./lib
+./lib/intsort.lib

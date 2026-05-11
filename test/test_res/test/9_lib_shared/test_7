@@ -1,0 +1,2 @@
+command: winedump -q -j export zig-out/x86_64-windows/Debug/a.dll &> build.log 
+exit-status: 0

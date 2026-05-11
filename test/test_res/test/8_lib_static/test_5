@@ -1,0 +1,2 @@
+command: nm -g zig-out/x86_64-linux/Debug/liba.a &> build.log 
+exit-status: 0

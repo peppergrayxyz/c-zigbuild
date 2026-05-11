@@ -1,0 +1,8 @@
+zig build run
+zig build -Dtargets -Doptimize=Debug
+zig build -Dtargets -Doptimize=ReleaseSafe
+zig build -Dtargets -Doptimize=ReleaseSmall
+zig build -Dtargets -Doptimize=ReleaseFast
+./zig-out/x86_64-linux/Debug/a
+WINEDEBUG=-all wine zig-out/x86_64-windows/Debug/a.exe
+darling shell zig-out/x86_64-macos/Debug/a

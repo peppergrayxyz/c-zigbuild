@@ -1,0 +1,3 @@
+command: zig build
+No source files found (build aborted)!
+exit-status: 0

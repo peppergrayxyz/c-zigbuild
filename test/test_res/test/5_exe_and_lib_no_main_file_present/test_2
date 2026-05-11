@@ -1,0 +1,2 @@
+command: if [ -d zig-out ]; then (cd zig-out && find); fi
+exit-status: 0

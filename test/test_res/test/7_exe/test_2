@@ -1,0 +1,2 @@
+command: zig build -Dtargets -Doptimize=Debug
+exit-status: 0

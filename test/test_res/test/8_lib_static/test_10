@@ -1,0 +1,3 @@
+command: cat build.log | grep int_sort | awk '{print $2, $3}'
+T _int_sort
+exit-status: 0

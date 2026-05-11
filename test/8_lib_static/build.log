@@ -1,0 +1,6 @@
+
+zig-out/x86_64-macos/Debug/liba.a(intsort.o):
+                 U ___ubsan_handle_add_overflow
+                 U ___ubsan_handle_pointer_overflow
+                 U ___ubsan_handle_type_mismatch_v1
+0000000000000000 T _int_sort

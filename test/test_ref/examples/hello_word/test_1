@@ -1,0 +1,16 @@
+command: zig build -Dtargets
+buildLibStatic: false
+buildLibShared: false
+buildBin: true
+exit-status: 0
+out-dir: .
+./x86_64-windows
+./x86_64-windows/Debug
+./x86_64-windows/Debug/hello_world.exe
+./x86_64-windows/Debug/hello_world.pdb
+./x86_64-linux
+./x86_64-linux/Debug
+./x86_64-linux/Debug/hello_world
+./x86_64-macos
+./x86_64-macos/Debug
+./x86_64-macos/Debug/hello_world

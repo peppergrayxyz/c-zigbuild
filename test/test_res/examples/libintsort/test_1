@@ -1,0 +1,12 @@
+command: zig build -Dtargets
+exit-status: 0
+out-dir: .
+./x86_64-windows
+./x86_64-windows/lib
+./x86_64-windows/lib/a.lib
+./x86_64-macos
+./x86_64-macos/lib
+./x86_64-macos/lib/liba.a
+./aarch64-linux
+./aarch64-linux/lib
+./aarch64-linux/lib/liba.a

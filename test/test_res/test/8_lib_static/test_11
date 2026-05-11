@@ -1,0 +1,30 @@
+command: if [ -d zig-out ]; then (cd zig-out && find); fi
+.
+./x86_64-windows
+./x86_64-windows/ReleaseFast
+./x86_64-windows/ReleaseFast/a.lib
+./x86_64-windows/Debug
+./x86_64-windows/Debug/a.lib
+./x86_64-windows/ReleaseSmall
+./x86_64-windows/ReleaseSmall/a.lib
+./x86_64-windows/ReleaseSafe
+./x86_64-windows/ReleaseSafe/a.lib
+./x86_64-linux
+./x86_64-linux/ReleaseFast
+./x86_64-linux/ReleaseFast/liba.a
+./x86_64-linux/Debug
+./x86_64-linux/Debug/liba.a
+./x86_64-linux/ReleaseSmall
+./x86_64-linux/ReleaseSmall/liba.a
+./x86_64-linux/ReleaseSafe
+./x86_64-linux/ReleaseSafe/liba.a
+./x86_64-macos
+./x86_64-macos/ReleaseFast
+./x86_64-macos/ReleaseFast/liba.a
+./x86_64-macos/Debug
+./x86_64-macos/Debug/liba.a
+./x86_64-macos/ReleaseSmall
+./x86_64-macos/ReleaseSmall/liba.a
+./x86_64-macos/ReleaseSafe
+./x86_64-macos/ReleaseSafe/liba.a
+exit-status: 0

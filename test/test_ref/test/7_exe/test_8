@@ -1,0 +1,3 @@
+command: darling shell zig-out/x86_64-macos/Debug/a
+Hello, World!
+exit-status: 127

@@ -1,0 +1,2 @@
+command: zig build -Dtargets -Doptimize=ReleaseSafe
+exit-status: 0

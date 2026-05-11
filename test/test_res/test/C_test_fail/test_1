@@ -1,0 +1,2 @@
+command: zig build test &> build.log
+exit-status: 1

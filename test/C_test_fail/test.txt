@@ -1,0 +1,2 @@
+zig build test &> build.log
+cat build.log | sed -E 's#(\.zig-cache).*?(test)#\1...\2#g'

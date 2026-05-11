@@ -1,0 +1,33 @@
+command: zig build -Dtargets
+buildLibStatic: true
+buildLibShared: false
+buildBin: true
+General protection exception (no address available)
+/usr/lib/zig/std/Build/Module.zig:602:16: 0x118c369 in addCMacro (build)
+    const b = m.owner;
+               ^
+/usr/lib/zig/std/Build/Step/Compile.zig:646:28: 0x115e3dd in defineCMacro (build)
+    c.root_module.addCMacro(name, value orelse "1");
+                           ^
+/home/pepper/dev/repos/c-zigbuild/examples/intsort_static/build.zig:231:39: 0x1114107 in build (build)
+                libShared.defineCMacro(conf.macro_lib_static, "");
+                                      ^
+/usr/lib/zig/std/Build.zig:2116:33: 0x10f7fd3 in runBuild__anon_8829 (build)
+        .Void => build_zig.build(b),
+                                ^
+/usr/lib/zig/compiler/build_runner.zig:301:29: 0x10f3128 in main (build)
+        try builder.runBuild(root);
+                            ^
+/usr/lib/zig/std/start.zig:524:37: 0x10daa75 in posixCallMainAndExit (build)
+            const result = root.main() catch |err| {
+                                    ^
+/usr/lib/zig/std/start.zig:266:5: 0x10da591 in _start (build)
+    asm volatile (switch (native_arch) {
+    ^
+???:?:?: 0x8 in ??? (???)
+Unwind information for `???:0x8` was not available, trace may be incomplete
+
+error: the following build command crashed:
+/home/pepper/dev/repos/c-zigbuild/examples/intsort_static/.zig-cache/o/aaf0bcac318f13a7f64a9fd97cfbe34a/build /usr/bin/zig /home/pepper/dev/repos/c-zigbuild/examples/intsort_static /home/pepper/dev/repos/c-zigbuild/examples/intsort_static/.zig-cache /home/pepper/.cache/zig --seed 0x45b93b3 -Zd1728805e70f2582 -Dtargets
+exit-status: 1
+out-dir: 

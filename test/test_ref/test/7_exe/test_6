@@ -1,0 +1,3 @@
+command: ./zig-out/x86_64-linux/Debug/a
+Hello, World!
+exit-status: 0

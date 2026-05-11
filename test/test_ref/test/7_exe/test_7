@@ -1,0 +1,3 @@
+command: WINEDEBUG=-all wine zig-out/x86_64-windows/Debug/a.exe
+Hello, World!
+exit-status: 0

@@ -1,0 +1,18 @@
+command: zig build -Dtargets
+buildLibStatic: false
+buildLibShared: true
+buildBin: false
+exit-status: 0
+out-dir: .
+./x86_64-windows
+./x86_64-windows/Debug
+./x86_64-windows/Debug/a.pdb
+./x86_64-windows/Debug/a.dll
+./x86_64-linux
+./x86_64-linux/Debug
+./x86_64-linux/Debug/liba.so
+./x86_64-macos
+./x86_64-macos/Debug
+./x86_64-macos/Debug/liba.dylib
+./lib
+./lib/a.lib

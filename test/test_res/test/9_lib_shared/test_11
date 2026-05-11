@@ -1,0 +1,35 @@
+command: if [ -d zig-out ]; then (cd zig-out && find); fi
+.
+./x86_64-windows
+./x86_64-windows/ReleaseFast
+./x86_64-windows/ReleaseFast/a.pdb
+./x86_64-windows/ReleaseFast/a.dll
+./x86_64-windows/Debug
+./x86_64-windows/Debug/a.pdb
+./x86_64-windows/Debug/a.dll
+./x86_64-windows/ReleaseSmall
+./x86_64-windows/ReleaseSmall/a.dll
+./x86_64-windows/ReleaseSafe
+./x86_64-windows/ReleaseSafe/a.pdb
+./x86_64-windows/ReleaseSafe/a.dll
+./x86_64-linux
+./x86_64-linux/ReleaseFast
+./x86_64-linux/ReleaseFast/liba.so
+./x86_64-linux/Debug
+./x86_64-linux/Debug/liba.so
+./x86_64-linux/ReleaseSmall
+./x86_64-linux/ReleaseSmall/liba.so
+./x86_64-linux/ReleaseSafe
+./x86_64-linux/ReleaseSafe/liba.so
+./x86_64-macos
+./x86_64-macos/ReleaseFast
+./x86_64-macos/ReleaseFast/liba.dylib
+./x86_64-macos/Debug
+./x86_64-macos/Debug/liba.dylib
+./x86_64-macos/ReleaseSmall
+./x86_64-macos/ReleaseSmall/liba.dylib
+./x86_64-macos/ReleaseSafe
+./x86_64-macos/ReleaseSafe/liba.dylib
+./lib
+./lib/a.lib
+exit-status: 0

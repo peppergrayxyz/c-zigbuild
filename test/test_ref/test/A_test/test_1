@@ -1,0 +1,6 @@
+command: zig build test
+TAP version 14
+ok 1 - [0] == 1
+ok 2 - [1] == 3
+ok 3 - [2] == 5
+1..3

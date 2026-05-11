@@ -1,0 +1,3 @@
+command: zig build run
+Hello, World!
+exit-status: 0

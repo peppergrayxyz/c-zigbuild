@@ -1,0 +1,25 @@
+command: cat build.log | sed -E 's#(\.zig-cache).*?(test)#\1...\2#g'
+TAP version 14
+1..2
+# intsort1
+  ok 1 - [0] == 1
+  ok 2 - [1] == 3
+  ok 3 - [2] == 5
+ok 1 - intsort1
+# intsort3
+  not ok 1 - [0] == 4
+  not ok 2 - [1] == 5
+  not ok 3 - [2] == 6
+not ok 2 - intsort3
+test
++- run exe test-2-intsort3 failure
+error: process exited with error code 1
+failed command: ./.zig-cache...test-2-intsort3 2 2 intsort3
+
+Build Summary: 3/5 steps succeeded (1 failed)
+test transitive failure
++- run exe test-2-intsort3 failure
+
+error: the following build command failed with exit code 1:
+.zig-cache...test
+exit-status: 0

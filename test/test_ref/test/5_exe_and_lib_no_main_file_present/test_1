@@ -1,0 +1,3 @@
+command: zig build
+Exe and library build configured, but main file `main.c` not found!
+exit-status: 0

@@ -1,0 +1,4 @@
+command: zig build
+Failed to read directory 'src': error.FileNotFound
+No source files found (build aborted)!
+exit-status: 0
