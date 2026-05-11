@@ -58,5 +58,12 @@ Add *_test.c files, each with a main(). Then run them:
 
 Check out the [examples](/examples/Examples.md) and consider using them as boiler plate.
 
+This is how you run the hello-world example:
+
+```
+git clone https://github.com/peppergrayxyz/c-zigbuild.git
+cd c-zigbuild/examples/hello_word  
+zig build run
+```
 
 
